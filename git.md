@@ -13,6 +13,17 @@ git commit -m ".gitignore is now working"
 git reset --hard origin/master
 ```
 
+## Credential cache
+```
+git config --global credential.helper wincred
+```
+
+### Move a repo from another repo
+```
+git clone --mirror http://docker.sipol.dev:8081/CoE-GIS/coegis-lizmap.git
+cd coegis-lizmap
+git push --mirror https://coegis.pl.s2-eu.capgemini.com/gerrit/p/coegis-lizmap.git
+```
 
 
 
