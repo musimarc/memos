@@ -13,6 +13,13 @@ git commit -m ".gitignore is now working"
 git reset --hard origin/master
 ```
 
+## Clean local repo
+```
+git reset --hard
+git clean -fdx
+```
+
+
 ## Credential cache
 ```
 git config --global credential.helper wincred
